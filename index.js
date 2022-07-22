@@ -33,7 +33,6 @@ const getData = async (url = 'https://www.spotrac.com/epl/rankings/') => {
 
 // localhost/5000?apid=a123123 router
 app.get('/apid' , (req,res) => {
-    console.log(req.query.id)
     if(req.query.id != 1231232133){
         res.status(500).json({err : 'invalid key'}) 
     }
